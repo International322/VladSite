@@ -1,0 +1,28 @@
+.header {
+  @apply flex items-center h-20 w-full absolute left-0 top-0 bg-black/40 shadow-black shadow-sm z-50;
+}
+
+.container {
+  @apply w-container mx-auto px-layout flex justify-between items-center  uppercase;
+}
+
+.logo {
+  @apply text-3xl font-bold text-white;
+}
+
+.menuItem {
+  @apply text-lg text-white;
+}
+
+.button {
+  @apply bg-transparent text-white px-8 py-2 rounded-sm border-2 border-white;
+}
+
+@media screen and (max-width: 600px) {
+  .button {
+    @apply hidden;
+  }
+  .menuItem {
+    @apply hidden;
+  }
+}

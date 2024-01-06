@@ -1,0 +1,71 @@
+/* Общие стили для всех секций */
+.section {
+  @apply flex items-center justify-center w-full p-layout h-screen bg-cover bg-center bg-no-repeat;
+}
+
+.container {
+  @apply px-layout flex;
+}
+
+.container__content {
+  @apply w-container m-auto px-layout flex relative z-10;
+}
+
+.section__1 {
+  @apply section bg-build1 relative;
+}
+
+/* Затемнение фона только для первой секции */
+.section__1::before {
+  content: ''; /* Создаем псевдоэлемент */
+  @apply absolute inset-0 bg-black opacity-50; /* Затемнение фона */
+}
+
+/* Специфичные стили для остальных секций */
+.section__2 {
+  @apply section bg-build2;
+}
+
+.section__3 {
+  @apply section bg-build3;
+}
+
+.section__4 {
+  @apply section bg-build4;
+}
+
+.section__5 {
+  @apply section bg-build5;
+}
+
+.section__6 {
+  @apply section bg-build6;
+}
+
+.section__7 {
+  @apply section bg-build7;
+}
+
+/* Стили заголовка и текста для первой секции */
+.header__title1 {
+  @apply text-5xl font-bold text-white;
+}
+
+.header__text1 {
+  @apply text-2xl font-bold text-white;
+}
+
+/* Стили кнопки для первой секции */
+.header__button1 {
+  @apply text-lg font-semibold text-black bg-orange-300 py-4 px-10;
+}
+
+/* Стили изображения для первой секции */
+.body__image1 {
+  @apply w-full h-full object-cover;
+}
+
+/* Стили заголовка для второй секции */
+.header__title2 {
+  @apply text-3xl font-bold text-red-600;
+}
