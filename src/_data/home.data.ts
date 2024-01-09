@@ -6,18 +6,25 @@ export const sectionData = [
     header__title: 'Мы проектируем дома, которые реально построить',
     header__text:
       'Наш проект сэкономит вам деньги, будет соответствовать вашему бюджету и понятен любому строителю или дизайнеру',
+    header__post_text_1:
+      'Проект будет максимально соответствовать вашим пожеланиям',
+    header__post_text_2:
+      'Проект прогнозирует сроки и бережет ваш бюджет строительства',
     header__button: 'Записаться на расчет проекта',
     body__image:
       'https://thumb.tildacdn.com/tild3263-6662-4538-a165-653663363237/-/resize/714x/-/format/webp/Group_3.png',
+    body__text: '',
   },
   {
     id: 2,
     className: 'section__2',
     src: 'bg-build2',
-    header__title: '22222',
+    header__title: 'О нас в цифрах',
     header__text: '',
     header__button: '',
     body__image: '',
+    body__text:
+      'Бесплатные консультации по проекту в течении срока строительства',
   },
   {
     id: 3,
@@ -27,6 +34,7 @@ export const sectionData = [
     header__text: '',
     header__button: '',
     body__image: '',
+    body__text: '',
   },
   {
     id: 4,
@@ -36,6 +44,7 @@ export const sectionData = [
     header__text: '',
     header__button: '',
     body__image: '',
+    body__text: '',
   },
   {
     id: 5,
@@ -45,6 +54,7 @@ export const sectionData = [
     header__text: '',
     header__button: '',
     body__image: '',
+    body__text: '',
   },
   {
     id: 6,
@@ -54,6 +64,7 @@ export const sectionData = [
     header__text: '',
     header__button: '',
     body__image: '',
+    body__text: '',
   },
   {
     id: 7,
@@ -63,5 +74,6 @@ export const sectionData = [
     header__text: '',
     header__button: '',
     body__image: '',
+    body__text: '',
   },
 ];

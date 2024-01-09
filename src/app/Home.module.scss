@@ -4,7 +4,7 @@
 }
 
 .container {
-  @apply w-full xl:w-container h-screen mx-auto px-layout flex items-center justify-center z-10;
+  @apply w-full xl:w-container h-screen mx-auto px-layout flex z-10;
 }
 
 /* Стили для первой секции */
@@ -45,7 +45,7 @@
 }
 
 .header__content1 {
-  @apply border-2 border-red-500 flex flex-col justify-center items-start w-1/2;
+  @apply flex flex-col justify-center items-start;
 }
 
 /* Стили заголовка и текста для первой секции */
@@ -63,7 +63,7 @@
 }
 
 .body__content1 {
-  @apply border-2 border-teal-400 flex items-center justify-center w-1/2;
+  @apply flex items-center justify-center;
 }
 
 /* Стили изображения для первой секции */

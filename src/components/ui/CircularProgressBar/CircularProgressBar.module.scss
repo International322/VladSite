@@ -1,0 +1,9 @@
+.circularProgressBar {
+  @apply relative  flex flex-col items-center justify-center;
+}
+
+.circle {
+  transform-origin: center;
+  transform: rotate(-90deg);
+  transition: stroke-dashoffset 0.3s ease-in-out;
+}
