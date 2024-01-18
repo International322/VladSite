@@ -1,125 +1,16 @@
-/* Общие стили для всех секций */
 .section {
-  @apply flex items-center justify-center w-full h-screen min-h-screen p-layout bg-cover bg-center bg-no-repeat;
+  @apply flex items-center justify-center min-h-screen w-full h-dvh p-layout bg-cover bg-center bg-no-repeat;
 }
 
 .container {
-  @apply w-full xl:w-container h-screen mx-auto px-layout flex z-10;
+  @apply mx-auto md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl;
 }
 
-/* Стили для первой секции */
-
-@keyframes zoomIn {
-  from {
-    background-size: 120%;
-  }
-  to {
-    background-size: 100%;
-  }
+.section_1 {
+  @apply section bg-build8 relative;
 }
 
-@keyframes fadeInOut {
-  0% {
-    opacity: 0.95;
-  }
-
-  10% {
-    opacity: 0.8;
-  }
-
-  // 25% {
-  //   opacity: 0.5;
-  // }
-
-  50% {
-    opacity: 0.1;
-  }
-
-  // 75% {
-  //   opacity: 0.5;
-  // }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.section__1 {
-  // Ваши текущие стили
-  @apply section relative hidden;
-  animation: zoomIn 5s ease-out infinite;
-
-  &::before {
-    animation: fadeInOut 5s ease-in-out infinite;
-  }
-}
-
-/* Аналогично для остальных классов фона */
-
-/* Затемнение фона только для первой секции */
-.section__1::before {
-  content: ''; /* Создаем псевдоэлемент */
-  @apply absolute inset-0 bg-black opacity-50; /* Затемнение фона */
-}
-
-/* Специфичные стили для остальных секций */
-.section__2 {
-  @apply section bg-brown-100;
-}
-
-.section__3 {
-  @apply section bg-build3;
-}
-
-.section__4 {
-  @apply section bg-build4;
-}
-
-.section__5 {
-  @apply section bg-build5;
-}
-
-.section__6 {
-  @apply section bg-build6;
-}
-
-.section__7 {
-  @apply section bg-build7;
-}
-
-.header__content1 {
-  @apply flex flex-col justify-center items-start w-1/2;
-}
-
-/* Стили заголовка и текста для первой секции */
-.header__title1 {
-  @apply text-3xl  md:text-5xl font-bold text-white;
-}
-
-.header__text1 {
-  @apply text-xl md:text-2xl font-bold text-white;
-}
-
-/* Стили кнопки для первой секции */
-.header__button1 {
-  @apply text-lg md:text-lg font-semibold text-black bg-orange-300 py-4 px-10;
-}
-
-.body__content1 {
-  @apply flex items-center justify-center w-1/2;
-}
-
-/* Стили изображения для первой секции */
-.body__image1 {
-  @apply hidden md:block w-auto h-auto;
-}
-
-/* Стили заголовка для второй секции */
-.header__title2 {
-  @apply text-6xl font-bold text-yellow-100;
-}
-
-/* Стили текста для второй секции */
-.body__text2 {
-  @apply text-2xl font-light text-violet-100;
+.section_1::before {
+  content: '';
+  @apply absolute inset-0 bg-black opacity-70;
 }

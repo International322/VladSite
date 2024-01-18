@@ -1,7 +1,3 @@
-.circularProgressBar {
-  @apply relative  flex flex-col items-center justify-center;
-}
-
 .circle {
   transform-origin: center;
   transform: rotate(-90deg);

@@ -1,8 +1,8 @@
 import React, { ReactNode } from 'react';
 import styles from './Layout.module.scss';
 
-import Header from './Header/Header';
-import Footer from './Footer/Footer';
+import Header from './header/header';
+import Footer from './footer/footer';
 
 interface LayoutProps {
   children: ReactNode;
